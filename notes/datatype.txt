@@ -1,0 +1,57 @@
+int
+
+declare:
+
+int x; // x is variable of type int
+
+assign value to x:
+
+x = 100; // assigning value to an existing decalred variable
+
+declare and assign in one line:
+
+int x = 200;
+
+--------------------------------------------------------------------
+
+int
+char
+boolean
+byte
+
+short
+long
+float
+double
+
+Primitive datatypes:
+--------------------
+byte char short int long
+float double
+boolean
+
+----------------------
+rename : shift + F6
+
+---------------------------------
+
+byte, Byte
+char, Character
+short, Short
+int, Integer
+long, Long
+float, Float
+double, Double
+boolean, Boolean
+
+char c1 = 'a'; // primitive
+Character c2 = 'b'; // wrapper or object type or reference type or class primitive type
+Character c3 = c1;
+
+
+----------------------
+
+primtive
+wrapper
+system defined types: String
+user defined types; Employee
