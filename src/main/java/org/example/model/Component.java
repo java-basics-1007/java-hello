@@ -17,6 +17,8 @@ public class Component {
 
     }
 
+
+
     public Component(){
         System.out.println("constructor");
     }
