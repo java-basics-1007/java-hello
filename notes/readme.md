@@ -22,6 +22,9 @@ public Class getClass();
 ## Constructors
 - Name of constructor is always the class name.
 - Constructor doesnt have any return type
+- Always keep init logic inside the constructor.
+- The intention of having a constructor to initialize its fields
+- Because the constructor of the class that executes just immediately after object creation
 
 ### Default Constructor
 When no constructors defined in the class, 
@@ -45,3 +48,23 @@ public class Employee{
 Employee e = new Employee(); // default constructor
 System.out.println(e.id); // 100
 ```
+### Defining param constructor
+```
+public class Employee{
+  public int id; // field
+  public Employee(int id){ // defining constructor
+    this.id = id;// this.fieldName = paramName
+  }
+}
+Employee e = new Employee(200); // param constructor
+System.out.println(e.id); // 200
+```
+
+### Constructor Overloading
+- The class can have one or more constructors with dfnt arguments
+- Once param constructors defined then by default , default constructor not added automatically, developer must add it manually
+
+## Overloading of methods ( static , instance methods it is allowed)
+- Methods in a class can have same name but difnt arguments
+## Overriding of methods (not for static methods)
+- Implementing or re-defining parent class method in child class with dfnt logic

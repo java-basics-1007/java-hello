@@ -48,7 +48,6 @@ char c1 = 'a'; // primitive
 Character c2 = 'b'; // wrapper or object type or reference type or class primitive type
 Character c3 = c1;
 
-
 ----------------------
 
 primtive
