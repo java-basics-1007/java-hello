@@ -63,4 +63,8 @@ public class SearchCustomer {
     private static Customer findByFirstName(Customer[] customers, String firstName){
         return null;
     }
+
+    private static Customer removeByEmail(Customer[] customers, String email){
+        return null;
+    }
 }
