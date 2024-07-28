@@ -1,5 +1,6 @@
 package org.example.arrays;
 
+import java.util.Arrays;
 import java.util.UUID;
 
 public class SearchCustomer {
@@ -40,6 +41,13 @@ public class SearchCustomer {
         Customer customerSearch2 = findCustomer(customers, "kube1.luka@gmail.com");
         System.out.println(customerSearch2); // null
 
+        Customer customerSearch3 = findByFirstName(customers, "Kube");
+        System.out.println(customerSearch3);
+
+        Customer deletedCustomer = removeByEmail(customers, "kube.luka@gmail.com");
+        System.out.println(deletedCustomer);
+        System.out.println(Arrays.toString(customers));
+
     }
 
     /**
@@ -61,10 +69,31 @@ public class SearchCustomer {
     }
 
     private static Customer findByFirstName(Customer[] customers, String firstName){
+        for(Customer element: customers){
+            String customerFirstName = element.firstName;
+            if(customerFirstName.equals(firstName)){
+                return element;
+            }
+        }
         return null;
     }
 
     private static Customer removeByEmail(Customer[] customers, String email){
+
+        int index = -1;
+        for(int i = 0; i< customers.length; i++){
+            Customer element = customers[i];
+            String customerEmail = element.email;
+            if (customerEmail.equals(email)) {
+                index = i;
+                break;
+            }
+        }
+        if(index!=-1) {
+            Customer customerToBeDelete = customers[index];
+            customers[index] = null;
+            return customerToBeDelete;
+        }
         return null;
     }
 }
