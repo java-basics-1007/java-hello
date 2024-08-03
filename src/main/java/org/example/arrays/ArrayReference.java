@@ -18,6 +18,8 @@ public class ArrayReference {
         System.out.println(Arrays.toString(a1));
         System.out.println(Arrays.toString(b1));
 
+
+
         int[] nums = {10, 20};
         swap(nums);
         System.out.println(Arrays.toString(nums));
