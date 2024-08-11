@@ -1,3 +1,8 @@
+08th Aug 2024
+
+List: 1, 3, 5(t1)
+List: 2, 4, 6, 8, 10 (t2)
+
 21st July 2024
 ## Q and A discussion 
 
