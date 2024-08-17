@@ -7,8 +7,8 @@ import java.util.*;
 public class ListMain {
 
     public static void main(String[] args) {
-//        ArrayListMain.execute();
-//        LinkedListMain.execute();
+        ArrayListMain.execute();
+        LinkedListMain.execute();
         // VectorMain.execute();
 
 //        SetMain.execute();
@@ -257,6 +257,11 @@ public class ListMain {
             System.out.println(list1); // 20, 10
             list1.removeFirst();
             System.out.println(list1); // 10
+
+            Iterator<Integer> it = list1.iterator();
+            while(it.hasNext()){
+                System.out.println(it.next());
+            }
         }
     }
 
